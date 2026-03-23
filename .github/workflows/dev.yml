@@ -14,6 +14,14 @@ jobs:
   extras:
     runs-on: ubuntu-latest
     steps:
+      - name: Cache Extras
+        id: cache-extras
+        uses: actions/cache@v5
+        with:
+          path: ~/.isofit
+          key: extras
+          lookup-only: true
+
       - name: Install uv
         uses: astral-sh/setup-uv@v7
         with:
@@ -32,11 +40,6 @@ jobs:
           isofit download all
           echo "Building examples"
           isofit build
-
-      - uses: actions/upload-artifact@v6
-        with:
-          name: extras
-          path: /home/runner/.isofit
 
   upload:
     # NOTE: Add other jobs here when adding a new workflow file
@@ -58,9 +61,6 @@ jobs:
       - uses: actions/download-artifact@v8
         with:
           path: dev
-
-      - name: Remove Extras
-        run: rm -rf dev/extras
 
       - name: Commit and push results
         uses: stefanzweifel/git-auto-commit-action@v7

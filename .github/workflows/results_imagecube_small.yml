@@ -7,10 +7,13 @@ jobs:
   spectra:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/download-artifact@v8
+      - name: Cache Extras
+        id: cache-extras
+        uses: actions/cache@v5
         with:
-          name: extras
-          path: /home/runner/.isofit
+          path: ~/.isofit
+          key: extras
+          fail-on-cache-miss: true
 
       - name: Install uv
         uses: astral-sh/setup-uv@v7
