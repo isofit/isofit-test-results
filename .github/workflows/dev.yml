@@ -42,7 +42,7 @@ jobs:
     # NOTE: Add other jobs here when adding a new workflow file
     needs:
       - imagecube-small
-      - lakemary
+      # - lakemary
     runs-on: ubuntu-latest
     permissions:
       contents: write
