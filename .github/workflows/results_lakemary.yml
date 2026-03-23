@@ -21,7 +21,7 @@ jobs:
 
       - name: Install ISOFIT
         run: |
-          uv pip install git+https://github.com/isofit/isofit --branch dev --extra plots
+          uv pip install "git+https://github.com/isofit/isofit@dev" --extra plots
 
       - name: Execute tests
         run: |

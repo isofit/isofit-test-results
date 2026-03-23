@@ -23,7 +23,7 @@ jobs:
 
       - name: Install ISOFIT
         run: |
-          uv pip install git+https://github.com/isofit/isofit --branch dev
+          uv pip install "git+https://github.com/isofit/isofit@dev"
 
       - name: Download Extras
         shell: bash
