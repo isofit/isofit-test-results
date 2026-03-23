@@ -36,7 +36,7 @@ jobs:
       - uses: actions/upload-artifact@v6
         with:
           name: extras
-          path: ~/.isofit
+          path: ${{ env.HOME }}/.isofit
 
   upload:
     # NOTE: Add other jobs here when adding a new workflow file
