@@ -71,6 +71,6 @@ jobs:
     needs: extras
     uses: ./.github/workflows/results_imagecube_small.yml
 
-  # lakemary:
-  #   needs: extras
-  #   uses: ./.github/workflows/results_lakemary.yml
+  lakemary:
+    needs: extras
+    uses: ./.github/workflows/results_lakemary.yml
