@@ -11,3 +11,4 @@ jobs:
       - uses: peter-evans/rebase@v4
         with:
           base: main
+          args: "-Xtheirs"
