@@ -1,6 +1,6 @@
 # This is a template for adding new test cases to be automatically uploaded to the repo
 # Be sure to update dev.yml to execute the workflow
-name: Name Doesn't Matter
+name: Template
 
 on:
   workflow_call:
