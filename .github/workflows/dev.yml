@@ -46,6 +46,7 @@ jobs:
     needs:
       - imagecube-small
       - lakemary
+      - seabass
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -74,3 +75,7 @@ jobs:
   lakemary:
     needs: extras
     uses: ./.github/workflows/results_lakemary.yml
+
+  seabass:
+    needs: extras
+    uses: ./.github/workflows/results_seabass.yml
