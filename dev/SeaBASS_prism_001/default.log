@@ -1,93 +1,93 @@
-INFO:2026-04-06,21:56:23 || apply_oe.py:apply_oe() | Checking input data files...
-INFO:2026-04-06,21:56:23 || apply_oe.py:apply_oe() | ...Data file checks complete
-INFO:2026-04-06,21:56:23 || apply_oe.py:apply_oe() | Setting up files and directories....
-INFO:2026-04-06,21:56:23 || template_construction.py:__init__() | Flightline ID: prm20231108t133822
-INFO:2026-04-06,21:56:23 || template_construction.py:__init__() | no noise path found, proceeding without
-INFO:2026-04-06,21:56:23 || apply_oe.py:apply_oe() | ...file/directory setup complete
-INFO:2026-04-06,21:56:23 || apply_oe.py:apply_oe() | Using inversion windows: [[350.0, 1360.0], [1410, 1800.0], [1970.0, 2500.0]]
-INFO:2026-04-06,21:56:23 || template_construction.py:check_surface_model() | No surface model provided. Build new one using given config file.
-INFO:2026-04-06,21:56:23 || apply_oe.py:apply_oe() | Observation means:
-INFO:2026-04-06,21:56:23 || apply_oe.py:apply_oe() | Path (km): 11.883787109375
-INFO:2026-04-06,21:56:23 || apply_oe.py:apply_oe() | To-sensor azimuth (deg): 89.74193572998047
-INFO:2026-04-06,21:56:23 || apply_oe.py:apply_oe() | To-sensor zenith (deg): 4.770888328552246
-INFO:2026-04-06,21:56:23 || apply_oe.py:apply_oe() | To-sun azimuth (deg): 279.9821472167969
-INFO:2026-04-06,21:56:23 || apply_oe.py:apply_oe() | To-sun zenith (deg): 46.55448532104492
-INFO:2026-04-06,21:56:23 || apply_oe.py:apply_oe() | Relative to-sun azimuth (deg): 169.7597885131836
-INFO:2026-04-06,21:56:23 || apply_oe.py:apply_oe() | Altitude (km): 11.842612720836643
-INFO:2026-04-06,21:56:23 || apply_oe.py:apply_oe() | Full (non-aerosol) LUTs:
-INFO:2026-04-06,21:56:23 || apply_oe.py:apply_oe() | Elevation: None
-INFO:2026-04-06,21:56:23 || apply_oe.py:apply_oe() | To-sensor zenith: None
-INFO:2026-04-06,21:56:23 || apply_oe.py:apply_oe() | To-sun zenith: None
-INFO:2026-04-06,21:56:23 || apply_oe.py:apply_oe() | Relative to-sun azimuth: None
-INFO:2026-04-06,21:56:23 || apply_oe.py:apply_oe() | H2O Vapor: [0.2    0.4452 0.6905 0.9357 1.181  1.4262 1.6714 1.9167 2.1619 2.4072
+INFO:2026-04-14,23:33:54 || apply_oe.py:apply_oe() | Checking input data files...
+INFO:2026-04-14,23:33:54 || apply_oe.py:apply_oe() | ...Data file checks complete
+INFO:2026-04-14,23:33:54 || apply_oe.py:apply_oe() | Setting up files and directories....
+INFO:2026-04-14,23:33:54 || template_construction.py:__init__() | Flightline ID: prm20231108t133822
+INFO:2026-04-14,23:33:54 || template_construction.py:__init__() | no noise path found, proceeding without
+INFO:2026-04-14,23:33:54 || apply_oe.py:apply_oe() | ...file/directory setup complete
+INFO:2026-04-14,23:33:54 || apply_oe.py:apply_oe() | Using inversion windows: [[350.0, 1360.0], [1410, 1800.0], [1970.0, 2500.0]]
+INFO:2026-04-14,23:33:54 || template_construction.py:check_surface_model() | No surface model provided. Build new one using given config file.
+INFO:2026-04-14,23:33:54 || apply_oe.py:apply_oe() | Observation means:
+INFO:2026-04-14,23:33:54 || apply_oe.py:apply_oe() | Path (km): 11.883787109375
+INFO:2026-04-14,23:33:54 || apply_oe.py:apply_oe() | To-sensor azimuth (deg): 89.74193572998047
+INFO:2026-04-14,23:33:54 || apply_oe.py:apply_oe() | To-sensor zenith (deg): 4.770888328552246
+INFO:2026-04-14,23:33:54 || apply_oe.py:apply_oe() | To-sun azimuth (deg): 279.9821472167969
+INFO:2026-04-14,23:33:54 || apply_oe.py:apply_oe() | To-sun zenith (deg): 46.55448532104492
+INFO:2026-04-14,23:33:54 || apply_oe.py:apply_oe() | Relative to-sun azimuth (deg): 169.7597885131836
+INFO:2026-04-14,23:33:54 || apply_oe.py:apply_oe() | Altitude (km): 11.842612720836643
+INFO:2026-04-14,23:33:54 || apply_oe.py:apply_oe() | Full (non-aerosol) LUTs:
+INFO:2026-04-14,23:33:54 || apply_oe.py:apply_oe() | Elevation: None
+INFO:2026-04-14,23:33:54 || apply_oe.py:apply_oe() | To-sensor zenith: None
+INFO:2026-04-14,23:33:54 || apply_oe.py:apply_oe() | To-sun zenith: None
+INFO:2026-04-14,23:33:54 || apply_oe.py:apply_oe() | Relative to-sun azimuth: None
+INFO:2026-04-14,23:33:54 || apply_oe.py:apply_oe() | H2O Vapor: [0.2    0.4452 0.6905 0.9357 1.181  1.4262 1.6714 1.9167 2.1619 2.4072
  2.6524 2.8976 3.1429 3.3881 3.6334 3.8786 4.1238 4.3691 4.6143 4.8596
  5.1048 5.35  ]
-INFO:2026-04-06,21:56:23 || apply_oe.py:apply_oe() | Writing main configuration file.
-INFO:2026-04-06,21:56:23 || template_construction.py:load_climatology() | Loading Climatology
-INFO:2026-04-06,21:56:23 || template_construction.py:load_climatology() | Climatology Loaded.  Aerosol State Vector:
+INFO:2026-04-14,23:33:54 || apply_oe.py:apply_oe() | Writing main configuration file.
+INFO:2026-04-14,23:33:54 || template_construction.py:load_climatology() | Loading Climatology
+INFO:2026-04-14,23:33:54 || template_construction.py:load_climatology() | Climatology Loaded.  Aerosol State Vector:
 {'AOT550': {'bounds': [0.04209, 1.0], 'scale': 1, 'init': 0.137881, 'prior_sigma': 10.0, 'prior_mean': 0.137881}}
 Aerosol LUT Grid:
 {'AOT550': [0.04209, 0.137881, 0.233672, 0.329463, 0.425254, 0.521045, 0.6168359999999999, 0.712627, 0.808418, 0.9042089999999999, 1.0]}
 Aerosol model path:/home/runner/.isofit/data/aerosol_model.txt
-INFO:2026-04-06,21:56:23 || ini.py:toTemplate() | Saved converted json to: /home/runner/.isofit/examples/SeaBASS_prism_001/config/prm20231108t133822_isofit.json.tmpl
-INFO:2026-04-06,21:56:23 || apply_oe.py:apply_oe() | Running ISOFIT with full LUT
-INFO:2026-04-06,21:56:23 || configs.py:create_new_config() | Loading config file: /home/runner/.isofit/examples/SeaBASS_prism_001/config/prm20231108t133822_isofit.json
-INFO:2026-04-06,21:56:23 || configs.py:get_config_errors() | Checking config sections for configuration issues
-INFO:2026-04-06,21:56:23 || configs.py:get_config_errors() | Configuration file checks complete, no errors found.
-INFO:2026-04-06,21:56:27 || isofit.py:run() | Running surfaces: uniform_surface
-INFO:2026-04-06,21:56:27 || radiative_transfer_engine.py:__init__() | Loading from wavelength_file: /home/runner/.isofit/examples/SeaBASS_prism_001/data/wavelengths.txt
-INFO:2026-04-06,21:56:27 || radiative_transfer_engine.py:__init__() | No LUT store found, beginning initialization and simulations
-INFO:2026-04-06,21:56:27 || radiative_transfer_engine.py:__init__() | Initializing LUT file
-INFO:2026-04-06,21:56:27 || radiative_transfer_engine.py:runSimulations() | Running any pre-sim functions
-INFO:2026-04-06,21:56:27 || sRTMnet.py:preSim() | Creating a simulator configuration
-INFO:2026-04-06,21:56:27 || sRTMnet.py:preSim() | Building simulator and executing (6S)
-INFO:2026-04-06,21:56:27 || radiative_transfer_engine.py:__init__() | No LUT store found, beginning initialization and simulations
-INFO:2026-04-06,21:56:27 || radiative_transfer_engine.py:__init__() | Initializing LUT file
-INFO:2026-04-06,21:56:27 || radiative_transfer_engine.py:runSimulations() | Running any pre-sim functions
-INFO:2026-04-06,21:56:27 || radiative_transfer_engine.py:runSimulations() | Executing parallel simulations
-INFO:2026-04-06,21:57:10 || common.py:__call__() |  10.33% simulations complete (elapsed: 0:00:42.494305, rate: 0:00:00.175596, eta: 0:06:22.448745)
-INFO:2026-04-06,21:57:10 || radiative_transfer_engine.py:runSimulations() | Flushing netCDF to disk
-INFO:2026-04-06,21:57:43 || common.py:__call__() |  20.25% simulations complete (elapsed: 0:01:16.116730, rate: 0:00:00.314532, eta: 0:05:04.466920)
-INFO:2026-04-06,21:57:43 || radiative_transfer_engine.py:runSimulations() | Flushing netCDF to disk
-INFO:2026-04-06,21:58:17 || common.py:__call__() |  30.17% simulations complete (elapsed: 0:01:50.086189, rate: 0:00:00.454902, eta: 0:04:16.867774)
-INFO:2026-04-06,21:58:17 || radiative_transfer_engine.py:runSimulations() | Flushing netCDF to disk
-INFO:2026-04-06,21:58:51 || common.py:__call__() |  40.08% simulations complete (elapsed: 0:02:24.291528, rate: 0:00:00.596246, eta: 0:03:36.437292)
-INFO:2026-04-06,21:58:51 || radiative_transfer_engine.py:runSimulations() | Flushing netCDF to disk
-INFO:2026-04-06,21:59:26 || common.py:__call__() |  50.00% simulations complete (elapsed: 0:02:58.415349, rate: 0:00:00.737254, eta: 0:02:58.415349)
-INFO:2026-04-06,21:59:26 || radiative_transfer_engine.py:runSimulations() | Flushing netCDF to disk
-INFO:2026-04-06,21:59:59 || common.py:__call__() |  60.33% simulations complete (elapsed: 0:03:32.184698, rate: 0:00:00.876796, eta: 0:02:21.456465)
-INFO:2026-04-06,21:59:59 || radiative_transfer_engine.py:runSimulations() | Flushing netCDF to disk
-INFO:2026-04-06,22:00:33 || common.py:__call__() |  70.25% simulations complete (elapsed: 0:04:06.217457, rate: 0:00:01.017428, eta: 0:01:45.521767)
-INFO:2026-04-06,22:00:33 || radiative_transfer_engine.py:runSimulations() | Flushing netCDF to disk
-INFO:2026-04-06,22:01:07 || common.py:__call__() |  80.17% simulations complete (elapsed: 0:04:40.242044, rate: 0:00:01.158025, eta: 0:01:10.060511)
-INFO:2026-04-06,22:01:07 || radiative_transfer_engine.py:runSimulations() | Flushing netCDF to disk
-INFO:2026-04-06,22:01:41 || common.py:__call__() |  90.08% simulations complete (elapsed: 0:05:13.758383, rate: 0:00:01.296522, eta: 0:00:34.862043)
-INFO:2026-04-06,22:01:41 || radiative_transfer_engine.py:runSimulations() | Flushing netCDF to disk
-INFO:2026-04-06,22:02:13 || common.py:__call__() | 100.00% simulations complete (elapsed: 0:05:46.149485, rate: 0:00:01.430370, eta: 0:00:00)
-INFO:2026-04-06,22:02:13 || radiative_transfer_engine.py:runSimulations() | Flushing netCDF to disk
-INFO:2026-04-06,22:02:13 || radiative_transfer_engine.py:runSimulations() | Running any post-sim functions
-INFO:2026-04-06,22:02:14 || radiative_transfer_engine.py:runSimulations() | Saving post-sim data to index zero of all dimensions except wl
-INFO:2026-04-06,22:02:14 || luts.py:load() | Loading LUT into memory
-WARNING:2026-04-06,22:02:14 || luts.py:load() | thermal_upwelling is fully NaN, leaving as-is
-WARNING:2026-04-06,22:02:14 || luts.py:load() | thermal_downwelling is fully NaN, leaving as-is
-INFO:2026-04-06,22:02:14 || sRTMnet.py:preSim() | Interpolating simulator quantities to emulator size
-INFO:2026-04-06,22:02:14 || sRTMnet.py:preSim() | Loading and predicting with emulator on 4 cores
-INFO:2026-04-06,22:02:17 || radiative_transfer_engine.py:runSimulations() | Saving pre-sim data to index zero of all dimensions except wl
-INFO:2026-04-06,22:02:18 || radiative_transfer_engine.py:runSimulations() | Running any post-sim functions
-INFO:2026-04-06,22:02:18 || luts.py:load() | Loading LUT into memory
-WARNING:2026-04-06,22:02:18 || luts.py:load() | thermal_upwelling is fully NaN, leaving as-is
-WARNING:2026-04-06,22:02:18 || luts.py:load() | thermal_downwelling is fully NaN, leaving as-is
-INFO:2026-04-06,22:02:19 || isofit.py:run() | Beginning 1 inversions in 1 chunks using 1 cores
-INFO:2026-04-06,22:02:23 ||| Worker 0 completed 1/~1.0:: 100.0% complete
-INFO:2026-04-06,22:02:23 ||| Worker at start location (0,0) completed 0/1
-INFO:2026-04-06,22:02:23 || isofit.py:run() | Pixel class: uniform_surface inversions complete.
-INFO:2026-04-06,22:02:23 || isofit.py:run() | Running totals
-INFO:2026-04-06,22:02:23 || isofit.py:run() | 4.11s total
-INFO:2026-04-06,22:02:23 || isofit.py:run() | 0.2433 spectra/s
-INFO:2026-04-06,22:02:23 || isofit.py:run() | 0.2433 spectra/s/core
-INFO:2026-04-06,22:02:23 || isofit.py:run() | All Inversions complete.
-INFO:2026-04-06,22:02:23 || isofit.py:run() | Final totals
-INFO:2026-04-06,22:02:23 || isofit.py:run() | 4.11s total
-INFO:2026-04-06,22:02:23 || isofit.py:run() | 0.2433 spectra/s
-INFO:2026-04-06,22:02:23 || isofit.py:run() | 0.2433 spectra/s/core
-INFO:2026-04-06,22:02:23 || apply_oe.py:apply_oe() | Done.
+INFO:2026-04-14,23:33:54 || ini.py:toTemplate() | Saved converted json to: /home/runner/.isofit/examples/SeaBASS_prism_001/config/prm20231108t133822_isofit.json.tmpl
+INFO:2026-04-14,23:33:54 || apply_oe.py:apply_oe() | Running ISOFIT with full LUT
+INFO:2026-04-14,23:33:54 || configs.py:create_new_config() | Loading config file: /home/runner/.isofit/examples/SeaBASS_prism_001/config/prm20231108t133822_isofit.json
+INFO:2026-04-14,23:33:54 || configs.py:get_config_errors() | Checking config sections for configuration issues
+INFO:2026-04-14,23:33:54 || configs.py:get_config_errors() | Configuration file checks complete, no errors found.
+INFO:2026-04-14,23:33:57 || isofit.py:run() | Running surfaces: uniform_surface
+INFO:2026-04-14,23:33:57 || radiative_transfer_engine.py:__init__() | Loading from wavelength_file: /home/runner/.isofit/examples/SeaBASS_prism_001/data/wavelengths.txt
+INFO:2026-04-14,23:33:57 || radiative_transfer_engine.py:__init__() | No LUT store found, beginning initialization and simulations
+INFO:2026-04-14,23:33:57 || radiative_transfer_engine.py:__init__() | Initializing LUT file
+INFO:2026-04-14,23:33:58 || radiative_transfer_engine.py:runSimulations() | Running any pre-sim functions
+INFO:2026-04-14,23:33:58 || sRTMnet.py:preSim() | Creating a simulator configuration
+INFO:2026-04-14,23:33:58 || sRTMnet.py:preSim() | Building simulator and executing (6S)
+INFO:2026-04-14,23:33:58 || radiative_transfer_engine.py:__init__() | No LUT store found, beginning initialization and simulations
+INFO:2026-04-14,23:33:58 || radiative_transfer_engine.py:__init__() | Initializing LUT file
+INFO:2026-04-14,23:33:58 || radiative_transfer_engine.py:runSimulations() | Running any pre-sim functions
+INFO:2026-04-14,23:33:58 || radiative_transfer_engine.py:runSimulations() | Executing parallel simulations
+INFO:2026-04-14,23:34:41 || common.py:__call__() |  10.33% simulations complete (elapsed: 0:00:42.754666, rate: 0:00:00.176672, eta: 0:06:24.791994)
+INFO:2026-04-14,23:34:41 || radiative_transfer_engine.py:runSimulations() | Flushing netCDF to disk
+INFO:2026-04-14,23:35:14 || common.py:__call__() |  20.25% simulations complete (elapsed: 0:01:16.083036, rate: 0:00:00.314393, eta: 0:05:04.332144)
+INFO:2026-04-14,23:35:14 || radiative_transfer_engine.py:runSimulations() | Flushing netCDF to disk
+INFO:2026-04-14,23:35:48 || common.py:__call__() |  30.17% simulations complete (elapsed: 0:01:50.306897, rate: 0:00:00.455814, eta: 0:04:17.382760)
+INFO:2026-04-14,23:35:48 || radiative_transfer_engine.py:runSimulations() | Flushing netCDF to disk
+INFO:2026-04-14,23:36:22 || common.py:__call__() |  40.08% simulations complete (elapsed: 0:02:23.630387, rate: 0:00:00.593514, eta: 0:03:35.445581)
+INFO:2026-04-14,23:36:22 || radiative_transfer_engine.py:runSimulations() | Flushing netCDF to disk
+INFO:2026-04-14,23:36:56 || common.py:__call__() |  50.00% simulations complete (elapsed: 0:02:57.713400, rate: 0:00:00.734353, eta: 0:02:57.713400)
+INFO:2026-04-14,23:36:56 || radiative_transfer_engine.py:runSimulations() | Flushing netCDF to disk
+INFO:2026-04-14,23:37:30 || common.py:__call__() |  60.33% simulations complete (elapsed: 0:03:31.638583, rate: 0:00:00.874540, eta: 0:02:21.092389)
+INFO:2026-04-14,23:37:30 || radiative_transfer_engine.py:runSimulations() | Flushing netCDF to disk
+INFO:2026-04-14,23:38:04 || common.py:__call__() |  70.25% simulations complete (elapsed: 0:04:05.694298, rate: 0:00:01.015266, eta: 0:01:45.297556)
+INFO:2026-04-14,23:38:04 || radiative_transfer_engine.py:runSimulations() | Flushing netCDF to disk
+INFO:2026-04-14,23:38:38 || common.py:__call__() |  80.17% simulations complete (elapsed: 0:04:39.611682, rate: 0:00:01.155420, eta: 0:01:09.902920)
+INFO:2026-04-14,23:38:38 || radiative_transfer_engine.py:runSimulations() | Flushing netCDF to disk
+INFO:2026-04-14,23:39:11 || common.py:__call__() |  90.08% simulations complete (elapsed: 0:05:13.427206, rate: 0:00:01.295154, eta: 0:00:34.825245)
+INFO:2026-04-14,23:39:11 || radiative_transfer_engine.py:runSimulations() | Flushing netCDF to disk
+INFO:2026-04-14,23:39:43 || common.py:__call__() | 100.00% simulations complete (elapsed: 0:05:45.392528, rate: 0:00:01.427242, eta: 0:00:00)
+INFO:2026-04-14,23:39:43 || radiative_transfer_engine.py:runSimulations() | Flushing netCDF to disk
+INFO:2026-04-14,23:39:44 || radiative_transfer_engine.py:runSimulations() | Running any post-sim functions
+INFO:2026-04-14,23:39:44 || radiative_transfer_engine.py:runSimulations() | Saving post-sim data to index zero of all dimensions except wl
+INFO:2026-04-14,23:39:44 || luts.py:load() | Loading LUT into memory
+WARNING:2026-04-14,23:39:44 || luts.py:load() | thermal_upwelling is fully NaN, leaving as-is
+WARNING:2026-04-14,23:39:44 || luts.py:load() | thermal_downwelling is fully NaN, leaving as-is
+INFO:2026-04-14,23:39:44 || sRTMnet.py:preSim() | Interpolating simulator quantities to emulator size
+INFO:2026-04-14,23:39:44 || sRTMnet.py:preSim() | Loading and predicting with emulator on 4 cores
+INFO:2026-04-14,23:39:47 || radiative_transfer_engine.py:runSimulations() | Saving pre-sim data to index zero of all dimensions except wl
+INFO:2026-04-14,23:39:47 || radiative_transfer_engine.py:runSimulations() | Running any post-sim functions
+INFO:2026-04-14,23:39:47 || luts.py:load() | Loading LUT into memory
+WARNING:2026-04-14,23:39:47 || luts.py:load() | thermal_upwelling is fully NaN, leaving as-is
+WARNING:2026-04-14,23:39:47 || luts.py:load() | thermal_downwelling is fully NaN, leaving as-is
+INFO:2026-04-14,23:39:48 || isofit.py:run() | Beginning 1 inversions in 1 chunks using 1 cores
+INFO:2026-04-14,23:39:52 ||| Worker 0 completed 1/~1.0:: 100.0% complete
+INFO:2026-04-14,23:39:52 ||| Worker at start location (0,0) completed 0/1
+INFO:2026-04-14,23:39:52 || isofit.py:run() | Pixel class: uniform_surface inversions complete.
+INFO:2026-04-14,23:39:52 || isofit.py:run() | Running totals
+INFO:2026-04-14,23:39:52 || isofit.py:run() | 3.87s total
+INFO:2026-04-14,23:39:52 || isofit.py:run() | 0.2582 spectra/s
+INFO:2026-04-14,23:39:52 || isofit.py:run() | 0.2582 spectra/s/core
+INFO:2026-04-14,23:39:52 || isofit.py:run() | All Inversions complete.
+INFO:2026-04-14,23:39:52 || isofit.py:run() | Final totals
+INFO:2026-04-14,23:39:52 || isofit.py:run() | 3.87s total
+INFO:2026-04-14,23:39:52 || isofit.py:run() | 0.2582 spectra/s
+INFO:2026-04-14,23:39:52 || isofit.py:run() | 0.2582 spectra/s/core
+INFO:2026-04-14,23:39:52 || apply_oe.py:apply_oe() | Done.
