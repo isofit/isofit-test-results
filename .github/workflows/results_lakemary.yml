@@ -32,13 +32,11 @@ jobs:
 
           RUN=$(isofit path examples)/LakeMary/
 
-          $RUN/default.sh --log_file results/default.log --resources
-          isoplots spfit -p $RUN -o results/default.png
-          isoplots resources results/default.resources.jsonl -o results/default.resources.html -l results/default.log --relative --png --debug
-
-          $RUN/bgrfl.sh --log_file results/bgrfl.log --resources
-          isoplots spfit -p $RUN -o results/bgrfl.png
-          isoplots resources results/bgrfl.resources.jsonl -o results/bgrfl.resources.html -l results/bgrfl.log --relative --png --debug
+          for i in default bgrfl; do
+            $RUN/${i}.sh --log_file results/${i}.log --resources
+            isoplots spfit -p $RUN -o results/${i}.png
+            isoplots resources results/${i}.resources.jsonl -o results/${i}.resources.html -l results/${i}.log --relative --png --debug
+          done
 
       - uses: actions/upload-artifact@v6
         with:
