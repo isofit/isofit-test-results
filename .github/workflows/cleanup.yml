@@ -1,0 +1,60 @@
+# Closes result PRs whose corresponding ISOFIT PR is no longer open.
+#
+# Each PR in this repo is named after the ISOFIT pull request it tracks
+# (branch name == ISOFIT PR number). When the upstream PR is merged or closed,
+# the matching result PR here is closed too and its branch deleted.
+
+name: Cleanup
+
+on:
+  schedule:
+    # Mondays at 06:00 PST (14:00 UTC)
+    - cron: "0 14 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Close result PRs for closed ISOFIT PRs
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          THIS_REPO: ${{ github.repository }}
+          ISOFIT_REPO: isofit/isofit
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          gh pr list --repo "$THIS_REPO" --state open --limit 200 \
+            --json number,headRefName \
+            --jq '.[] | [.number, .headRefName] | @tsv' \
+          | while IFS=$'\t' read -r pr branch; do
+              # The branch name is the upstream ISOFIT PR number.
+              if ! [[ "$branch" =~ ^[0-9]+$ ]]; then
+                echo "PR #$pr: branch '$branch' is not an ISOFIT PR number, skipping"
+                continue
+              fi
+
+              state=$(gh pr view "$branch" --repo "$ISOFIT_REPO" --json state --jq .state 2>/dev/null || echo "NOTFOUND")
+
+              case "$state" in
+                OPEN)
+                  echo "PR #$pr: ISOFIT #$branch is open, keeping"
+                  ;;
+                MERGED|CLOSED)
+                  echo "PR #$pr: ISOFIT #$branch is $state, closing"
+                  gh pr close "$pr" --repo "$THIS_REPO" --delete-branch \
+                    --comment "Closing automatically: ISOFIT PR #$branch is $state."
+                  ;;
+                NOTFOUND)
+                  echo "PR #$pr: ISOFIT #$branch not found, skipping"
+                  ;;
+                *)
+                  echo "PR #$pr: unexpected ISOFIT #$branch state '$state', skipping"
+                  ;;
+              esac
+            done
