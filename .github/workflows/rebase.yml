@@ -4,11 +4,20 @@ on:
   push:
     branches: [main]
 
+permissions:
+  contents: write
+  pull-requests: read
+
 jobs:
   rebase:
     runs-on: ubuntu-latest
     steps:
-      - uses: peter-evans/rebase@v4
+      - uses: actions/checkout@v4
         with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: peter-evans/rebase@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
           base: main
           rebase-options: "-Xtheirs"
