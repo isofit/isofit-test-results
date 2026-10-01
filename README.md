@@ -8,13 +8,14 @@ outputs back here so they can be browsed and compared across ISOFIT revisions.
 
 ## How it works
 
-- Each test case is a reusable workflow (`results_*.yml`) that executes an ISOFIT
-  example, renders figures and a resource report with `isoplots`, and uploads the
-  output as a build artifact.
-- The `upload` job collects every artifact and commits the results into
-  [`dev/`](dev), one subfolder per test case.
+- ISOFIT's own CI runs the example test cases, renders figures and resource
+  reports with `isoplots`, and commits the outputs directly into this repository —
+  into [`dev/`](dev) on `main`, or into a per-PR branch for pull-request builds.
 - The [`Rebase`](.github/workflows/rebase.yml) workflow keeps the per-PR branches
-  rebased on top of `main`.
+  rebased on top of `main` (using `-Xtheirs`) whenever `main` is updated.
+- The [`Cleanup`](.github/workflows/cleanup.yml) workflow runs weekly and closes
+  result PRs (and deletes their branches) once the ISOFIT PR they track is merged
+  or closed.
 
 ## Layout
 
@@ -23,7 +24,7 @@ dev/                      # results built from ISOFIT's dev branch
   lake_mary/              # Lake Mary single-pixel retrieval (default + bgrfl)
   SeaBASS_prism_001/      # SeaBASS PRISM example
   imagecube_small/        # small image-cube spectra
-.github/workflows/        # CI that produces the results above
+.github/workflows/        # Rebase + Cleanup automation for this repo
 ```
 
 Each test-case folder contains the generated artifacts, typically:
@@ -42,8 +43,7 @@ Each test-case folder contains the generated artifacts, typically:
 
 ## Adding a new test case
 
-1. Copy the template workflow (`results_template.yml`) to a new
-   `results_<name>.yml`, and fill in the commands that generate the files you want
-   uploaded into the `results/` directory.
-2. Register it in [`dev.yml`](.github/workflows/dev.yml): add a job that calls your
-   new reusable workflow and list that job under the `upload` job's `needs`.
+Test cases are defined and run by ISOFIT's CI, which commits their output here.
+To add one, add the example to ISOFIT's test workflow so it generates the plots
+and resource report and commits them into a new `dev/<name>/` subfolder. No
+configuration is needed in this repository.
