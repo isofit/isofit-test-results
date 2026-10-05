@@ -1,0 +1,9 @@
+# Collapse non-image test artifacts in PR "Files changed" diffs.
+# These stay tracked in the repo and in history — they just render
+# collapsed ("Load diff") so the PNG image diffs stand out.
+*.log           linguist-generated=true
+*.jsonl         linguist-generated=true
+*.html          linguist-generated=true
+
+# Keep PNGs visible as image diffs (explicitly not generated).
+*.png           linguist-generated=false
