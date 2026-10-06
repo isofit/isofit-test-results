@@ -1,304 +1,309 @@
-INFO:2026-10-06,15:56:12 || apply_oe.py:apply_oe() | Checking input data files...
-INFO:2026-10-06,15:56:12 || apply_oe.py:apply_oe() | ...Data file checks complete
-INFO:2026-10-06,15:56:12 || apply_oe.py:apply_oe() | Setting up files and directories....
-INFO:2026-10-06,15:56:12 || template_construction.py:__init__() | Flightline ID: ang20170323t202244
-INFO:2026-10-06,15:56:12 || template_construction.py:__init__() | no noise path found, proceeding without
-INFO:2026-10-06,15:56:12 || apply_oe.py:apply_oe() | ...file/directory setup complete
-INFO:2026-10-06,15:56:12 || apply_oe.py:apply_oe() | Using inversion windows: [[350.0, 1360.0], [1410, 1800.0], [1970.0, 2500.0]]
-INFO:2026-10-06,15:56:12 || template_construction.py:get_wavelengths() | No wavelength file provided. Obtaining wavelength grid from ENVI header of radiance cube.
-INFO:2026-10-06,15:56:12 || template_construction.py:get_wavelengths() | Wavelength units of nm inferred...converting to microns
-INFO:2026-10-06,15:56:12 || template_construction.py:check_surface_model() | No surface model provided. Build new one using given config file.
-INFO:2026-10-06,15:56:13 || apply_oe.py:apply_oe() | Observation means:
-INFO:2026-10-06,15:56:13 || apply_oe.py:apply_oe() | Path (km): 20.716992087408016
-INFO:2026-10-06,15:56:13 || apply_oe.py:apply_oe() | To-sensor azimuth (deg): 71.27130737250893
-INFO:2026-10-06,15:56:13 || apply_oe.py:apply_oe() | To-sensor zenith (deg): 17.34528282852098
-INFO:2026-10-06,15:56:13 || apply_oe.py:apply_oe() | To-sun azimuth (deg): 197.3237574125862
-INFO:2026-10-06,15:56:13 || apply_oe.py:apply_oe() | To-sun zenith (deg): 32.45698605676816
-INFO:2026-10-06,15:56:13 || apply_oe.py:apply_oe() | Relative to-sun azimuth (deg): 126.05245004007726
-INFO:2026-10-06,15:56:13 || apply_oe.py:apply_oe() | Altitude (km): 19.808562728369008
-INFO:2026-10-06,15:56:13 || apply_oe.py:apply_oe() | Pre-solve H2O grid: [0.2  0.77 1.34 1.91 2.48 3.06 3.63 4.2  4.77 5.34]
-INFO:2026-10-06,15:56:13 || apply_oe.py:apply_oe() | Writing H2O pre-solve configuration file.
-INFO:2026-10-06,15:56:13 || ini.py:toTemplate() | Saved converted json to: /home/runner/.isofit/examples/image_cube/small/config/ang20170323t202244_h2o.json.tmpl
-INFO:2026-10-06,15:56:13 || apply_oe.py:apply_oe() | Run ISOFIT initial guess
-INFO:2026-10-06,15:56:13 || configs.py:create_new_config() | Loading config file: /home/runner/.isofit/examples/image_cube/small/config/ang20170323t202244_h2o.json
-INFO:2026-10-06,15:56:13 || configs.py:get_config_errors() | Checking config sections for configuration issues
-INFO:2026-10-06,15:56:13 || configs.py:get_config_errors() | Configuration file checks complete, no errors found.
-INFO:2026-10-06,15:56:16 || isofit.py:run() | Running surfaces: uniform_surface
-INFO:2026-10-06,15:56:16 || atmosphere.py:__init__() | Loading from wavelength_file: /home/runner/.isofit/examples/image_cube/small/data/wavelengths.txt
-INFO:2026-10-06,15:56:16 || reader.py:__init__() | No LUT provided, attempting to build it
-INFO:2026-10-06,15:56:17 || zarr.py:calc_shards() | Number of points: 4,250
-INFO:2026-10-06,15:56:17 || zarr.py:calc_shards() | Target chunks per file: 157903 (6.00gb) (scale: 12)
-INFO:2026-10-06,15:56:17 || zarr.py:calc_shards() | Shapes:
-INFO:2026-10-06,15:56:17 || zarr.py:calc_shards() |   dimensions: [425  10]
-INFO:2026-10-06,15:56:17 || zarr.py:calc_shards() |     chunking: [425   1]
-INFO:2026-10-06,15:56:17 || zarr.py:calc_shards() | Recommended
-INFO:2026-10-06,15:56:17 || zarr.py:calc_shards() |     sharding: [425  10]
-INFO:2026-10-06,15:56:17 || zarr.py:calc_shards() | Produces:
-INFO:2026-10-06,15:56:17 || zarr.py:calc_shards() |   Chunks per file: 10 (0.00gb)
-INFO:2026-10-06,15:56:17 || zarr.py:calc_shards() |   Number of files: 1
-INFO:2026-10-06,15:56:17 || writer.py:runSimulations() | Running any pre-sim functions
-INFO:2026-10-06,15:56:17 || sRTMnet.py:preSim() | Building simulator and executing (6S)
-INFO:2026-10-06,15:56:17 || reader.py:__init__() | No LUT provided, attempting to build it
-INFO:2026-10-06,15:56:17 || zarr.py:calc_shards() | Number of points: 8,610
-INFO:2026-10-06,15:56:17 || zarr.py:calc_shards() | Target chunks per file: 77942 (6.00gb) (scale: 12)
-INFO:2026-10-06,15:56:17 || zarr.py:calc_shards() | Shapes:
-INFO:2026-10-06,15:56:17 || zarr.py:calc_shards() |   dimensions: [861  10]
-INFO:2026-10-06,15:56:17 || zarr.py:calc_shards() |     chunking: [861   1]
-INFO:2026-10-06,15:56:17 || zarr.py:calc_shards() | Recommended
-INFO:2026-10-06,15:56:17 || zarr.py:calc_shards() |     sharding: [861   2]
-INFO:2026-10-06,15:56:17 || zarr.py:calc_shards() | Produces:
-INFO:2026-10-06,15:56:17 || zarr.py:calc_shards() |   Chunks per file: 2 (0.00gb)
-INFO:2026-10-06,15:56:17 || zarr.py:calc_shards() |   Number of files: 5
-INFO:2026-10-06,15:56:17 || writer.py:runSimulations() | Running any pre-sim functions
-INFO:2026-10-06,15:56:17 || writer.py:runSimulations() | Executing parallel simulations by shards
-INFO:2026-10-06,15:56:29 || writer.py:parallelize_shards() | Saved chunkless: {'solzen', 'coszen'}
-INFO:2026-10-06,15:56:29 || common.py:__call__() |  20.00% shards complete (elapsed: 0:00:12.250955, rate: 0:00:02.450191, eta: 0:20:12.844545)
-INFO:2026-10-06,15:56:30 || common.py:__call__() |  40.00% shards complete (elapsed: 0:00:12.299788, rate: 0:00:02.459958, eta: 0:10:02.689612)
-INFO:2026-10-06,15:56:30 || common.py:__call__() |  60.00% shards complete (elapsed: 0:00:12.351671, rate: 0:00:02.470334, eta: 0:06:39.370696)
-INFO:2026-10-06,15:56:30 || common.py:__call__() |  80.00% shards complete (elapsed: 0:00:12.371247, rate: 0:00:02.474249, eta: 0:04:56.909928)
-INFO:2026-10-06,15:56:34 || common.py:__call__() | 100.00% shards complete (elapsed: 0:00:16.722211, rate: 0:00:03.344442, eta: 0:05:17.722009)
-INFO:2026-10-06,15:56:34 || writer.py:runSimulations() | Running any post-sim functions
-INFO:2026-10-06,15:56:35 || writer.py:runSimulations() | Saving post-sim data to index zero of all dimensions except wl
-INFO:2026-10-06,15:56:35 || sRTMnet.py:process() | Interpolating simulator quantities to emulator size
-INFO:2026-10-06,15:56:35 || sRTMnet.py:process() | Loading and predicting with emulator on 4 cores
-INFO:2026-10-06,15:56:36 || common.py:__call__() | 100.00% shards processed (elapsed: 0:00:01.228735, rate: 0:00:01.228735, eta: 0:02:01.644765)
-INFO:2026-10-06,15:56:36 || writer.py:runSimulations() | Saving pre-sim data to index zero of all dimensions except wl
-INFO:2026-10-06,15:56:36 || writer.py:runSimulations() | Running any post-sim functions
-INFO:2026-10-06,15:56:39 || isofit.py:run() | Beginning 100 inversions in 40 chunks using 4 cores
-INFO:2026-10-06,15:56:46 ||| Worker 0 completed 1/~25.0:: 4.0% complete
-INFO:2026-10-06,15:56:46 ||| Worker 1 completed 1/~25.0:: 4.0% complete
-INFO:2026-10-06,15:56:47 ||| Worker 2 completed 1/~25.0:: 4.0% complete
-INFO:2026-10-06,15:56:47 ||| Worker at start location (0,6) completed 1/2
-INFO:2026-10-06,15:56:47 ||| Worker at start location (0,9) completed 2/3
-INFO:2026-10-06,15:56:47 ||| Worker 3 completed 1/~25.0:: 4.0% complete
-INFO:2026-10-06,15:56:47 ||| Worker 1 completed 3/~25.0:: 12.0% complete
-INFO:2026-10-06,15:56:47 ||| Worker 0 completed 4/~25.0:: 16.0% complete
-INFO:2026-10-06,15:56:47 ||| Worker at start location (0,1) completed 1/2
-INFO:2026-10-06,15:56:47 ||| Worker at start location (1,1) completed 1/2
-INFO:2026-10-06,15:56:47 ||| Worker at start location (0,4) completed 2/3
-INFO:2026-10-06,15:56:47 ||| Worker 3 completed 3/~25.0:: 12.0% complete
-INFO:2026-10-06,15:56:47 ||| Worker 1 completed 5/~25.0:: 20.0% complete
-INFO:2026-10-06,15:56:47 ||| Worker 2 completed 4/~25.0:: 16.0% complete
-INFO:2026-10-06,15:56:47 ||| Worker at start location (1,4) completed 2/3
-INFO:2026-10-06,15:56:48 ||| Worker at start location (1,6) completed 1/2
-INFO:2026-10-06,15:56:48 ||| Worker 0 completed 7/~25.0:: 28.0% complete
-INFO:2026-10-06,15:56:48 ||| Worker at start location (2,2) completed 2/3
-INFO:2026-10-06,15:56:48 ||| Worker 3 completed 5/~25.0:: 20.0% complete
-INFO:2026-10-06,15:56:48 ||| Worker at start location (2,4) completed 1/2
-INFO:2026-10-06,15:56:48 ||| Worker at start location (1,9) completed 2/3
-INFO:2026-10-06,15:56:48 ||| Worker 2 completed 7/~25.0:: 28.0% complete
-INFO:2026-10-06,15:56:48 ||| Worker 0 completed 9/~25.0:: 36.0% complete
-INFO:2026-10-06,15:56:48 ||| Worker at start location (2,7) completed 2/3
-INFO:2026-10-06,15:56:49 ||| Worker at start location (2,9) completed 1/2
-INFO:2026-10-06,15:56:49 ||| Worker 1 completed 8/~25.0:: 32.0% complete
-INFO:2026-10-06,15:56:49 ||| Worker 2 completed 9/~25.0:: 36.0% complete
-INFO:2026-10-06,15:56:49 ||| Worker 3 completed 8/~25.0:: 32.0% complete
-INFO:2026-10-06,15:56:50 ||| Worker at start location (3,2) completed 2/3
-INFO:2026-10-06,15:56:50 ||| Worker at start location (3,4) completed 1/2
-INFO:2026-10-06,15:56:51 ||| Worker at start location (4,0) completed 2/3
-INFO:2026-10-06,15:56:51 ||| Worker 0 completed 12/~25.0:: 48.0% complete
-INFO:2026-10-06,15:56:51 ||| Worker 2 completed 12/~25.0:: 48.0% complete
-INFO:2026-10-06,15:56:51 ||| Worker 1 completed 10/~25.0:: 40.0% complete
-INFO:2026-10-06,15:56:52 ||| Worker at start location (4,2) completed 1/2
-INFO:2026-10-06,15:56:52 ||| Worker at start location (3,7) completed 2/3
-INFO:2026-10-06,15:56:53 ||| Worker 3 completed 11/~25.0:: 44.0% complete
-INFO:2026-10-06,15:56:53 ||| Worker 0 completed 14/~25.0:: 56.0% complete
-INFO:2026-10-06,15:56:53 ||| Worker at start location (4,7) completed 1/2
-INFO:2026-10-06,15:56:54 ||| Worker at start location (5,2) completed 1/2
-INFO:2026-10-06,15:56:54 ||| Worker at start location (4,5) completed 2/3
-INFO:2026-10-06,15:56:54 ||| Worker 1 completed 13/~25.0:: 52.0% complete
-INFO:2026-10-06,15:56:54 ||| Worker 3 completed 13/~25.0:: 52.0% complete
-INFO:2026-10-06,15:56:54 ||| Worker at start location (5,0) completed 2/3
-INFO:2026-10-06,15:56:54 ||| Worker 2 completed 14/~25.0:: 56.0% complete
-INFO:2026-10-06,15:56:54 ||| Worker at start location (5,7) completed 1/2
-INFO:2026-10-06,15:56:55 ||| Worker 0 completed 17/~25.0:: 68.0% complete
-INFO:2026-10-06,15:56:55 ||| Worker 3 completed 15/~25.0:: 60.0% complete
-INFO:2026-10-06,15:56:55 ||| Worker at start location (6,5) completed 1/2
-INFO:2026-10-06,15:56:55 ||| Worker at start location (6,0) completed 2/3
-INFO:2026-10-06,15:56:55 ||| Worker 3 completed 17/~25.0:: 68.0% complete
-INFO:2026-10-06,15:56:55 ||| Worker 1 completed 16/~25.0:: 64.0% complete
-INFO:2026-10-06,15:56:55 ||| Worker at start location (5,5) completed 2/3
-INFO:2026-10-06,15:56:55 ||| Worker at start location (6,8) completed 2/3
-INFO:2026-10-06,15:56:55 ||| Worker at start location (7,0) completed 1/2
-INFO:2026-10-06,15:56:56 ||| Worker at start location (6,3) completed 2/3
-INFO:2026-10-06,15:56:56 ||| Worker 3 completed 20/~25.0:: 80.0% complete
-INFO:2026-10-06,15:56:56 ||| Worker 1 completed 18/~25.0:: 72.0% complete
-INFO:2026-10-06,15:56:56 ||| Worker 2 completed 17/~25.0:: 68.0% complete
-INFO:2026-10-06,15:56:56 ||| Worker 0 completed 20/~25.0:: 80.0% complete
-INFO:2026-10-06,15:56:56 ||| Worker at start location (7,5) completed 1/2
-INFO:2026-10-06,15:56:56 ||| Worker at start location (7,3) completed 2/3
-INFO:2026-10-06,15:56:56 ||| Worker at start location (7,8) completed 2/3
-INFO:2026-10-06,15:56:56 ||| Worker 2 completed 19/~25.0:: 76.0% complete
-INFO:2026-10-06,15:56:56 ||| Worker at start location (8,1) completed 2/3
-INFO:2026-10-06,15:56:56 ||| Worker at start location (8,3) completed 1/2
-INFO:2026-10-06,15:56:56 ||| Worker 3 completed 23/~25.0:: 92.0% complete
-INFO:2026-10-06,15:56:56 ||| Worker 1 completed 21/~25.0:: 84.0% complete
-INFO:2026-10-06,15:56:57 ||| Worker 0 completed 23/~25.0:: 92.0% complete
-INFO:2026-10-06,15:56:57 ||| Worker 2 completed 21/~25.0:: 84.0% complete
-INFO:2026-10-06,15:56:57 ||| Worker at start location (8,8) completed 1/2
-INFO:2026-10-06,15:56:57 ||| Worker at start location (9,3) completed 1/2
-INFO:2026-10-06,15:56:57 ||| Worker at start location (8,6) completed 2/3
-INFO:2026-10-06,15:56:57 ||| Worker at start location (9,1) completed 2/3
-INFO:2026-10-06,15:56:57 ||| Worker 1 completed 23/~25.0:: 92.0% complete
-INFO:2026-10-06,15:56:57 ||| Worker 2 completed 23/~25.0:: 92.0% complete
-INFO:2026-10-06,15:56:57 ||| Worker at start location (9,6) completed 2/3
-INFO:2026-10-06,15:56:58 ||| Worker at start location (9,9) completed 2/3
-INFO:2026-10-06,15:56:58 || isofit.py:run() | Pixel class: uniform_surface inversions complete.
-INFO:2026-10-06,15:56:58 || isofit.py:run() | Running totals
-INFO:2026-10-06,15:56:58 || isofit.py:run() | 19.02s total
-INFO:2026-10-06,15:56:58 || isofit.py:run() | 5.2589 spectra/s
-INFO:2026-10-06,15:56:58 || isofit.py:run() | 1.3147 spectra/s/core
-INFO:2026-10-06,15:56:58 || isofit.py:run() | All Inversions complete.
-INFO:2026-10-06,15:56:58 || isofit.py:run() | Final totals
-INFO:2026-10-06,15:56:58 || isofit.py:run() | 19.02s total
-INFO:2026-10-06,15:56:58 || isofit.py:run() | 5.2589 spectra/s
-INFO:2026-10-06,15:56:58 || isofit.py:run() | 1.3147 spectra/s/core
-INFO:2026-10-06,15:56:58 || apply_oe.py:apply_oe() | Full (non-aerosol) LUTs:
-INFO:2026-10-06,15:56:58 || apply_oe.py:apply_oe() | Elevation: [0.     0.226  0.4519 0.6779 0.9039 1.1298 1.3558 1.5817 1.8077 2.0337]
-INFO:2026-10-06,15:56:58 || apply_oe.py:apply_oe() | To-sensor zenith: None
-INFO:2026-10-06,15:56:58 || apply_oe.py:apply_oe() | To-sun zenith: None
-INFO:2026-10-06,15:56:58 || apply_oe.py:apply_oe() | Relative to-sun azimuth: None
-INFO:2026-10-06,15:56:58 || apply_oe.py:apply_oe() | H2O Vapor: [0.8083 1.0046 1.2008 1.397  1.5933]
-INFO:2026-10-06,15:56:58 || apply_oe.py:apply_oe() | Writing main configuration file.
-INFO:2026-10-06,15:56:58 || template_construction.py:load_climatology() | Loading Climatology
-INFO:2026-10-06,15:56:58 || template_construction.py:load_climatology() | Climatology Loaded.  Aerosol State Vector:
+INFO:2026-10-06,22:03:31 || apply_oe.py:apply_oe() | Checking input data files...
+INFO:2026-10-06,22:03:31 || apply_oe.py:apply_oe() | ...Data file checks complete
+INFO:2026-10-06,22:03:31 || apply_oe.py:apply_oe() | Setting up files and directories....
+INFO:2026-10-06,22:03:31 || template_construction.py:__init__() | Flightline ID: ang20170323t202244
+INFO:2026-10-06,22:03:31 || template_construction.py:__init__() | no noise path found, proceeding without
+INFO:2026-10-06,22:03:31 || apply_oe.py:apply_oe() | ...file/directory setup complete
+INFO:2026-10-06,22:03:31 || apply_oe.py:apply_oe() | Using inversion windows: [[350.0, 1360.0], [1410, 1800.0], [1970.0, 2500.0]]
+INFO:2026-10-06,22:03:31 || template_construction.py:get_wavelengths() | No wavelength file provided. Obtaining wavelength grid from ENVI header of radiance cube.
+INFO:2026-10-06,22:03:31 || template_construction.py:get_wavelengths() | Wavelength units of nm inferred...converting to microns
+INFO:2026-10-06,22:03:31 || template_construction.py:check_surface_model() | No surface model provided. Build new one using given config file.
+INFO:2026-10-06,22:03:32 || apply_oe.py:apply_oe() | Observation means:
+INFO:2026-10-06,22:03:32 || apply_oe.py:apply_oe() | Path (km): 20.716992087408016
+INFO:2026-10-06,22:03:32 || apply_oe.py:apply_oe() | To-sensor azimuth (deg): 71.27130737250893
+INFO:2026-10-06,22:03:32 || apply_oe.py:apply_oe() | To-sensor zenith (deg): 17.34528282852098
+INFO:2026-10-06,22:03:32 || apply_oe.py:apply_oe() | To-sun azimuth (deg): 197.3237574125862
+INFO:2026-10-06,22:03:32 || apply_oe.py:apply_oe() | To-sun zenith (deg): 32.45698605676816
+INFO:2026-10-06,22:03:32 || apply_oe.py:apply_oe() | Relative to-sun azimuth (deg): 126.05245004007726
+INFO:2026-10-06,22:03:32 || apply_oe.py:apply_oe() | Altitude (km): 19.808562728369008
+INFO:2026-10-06,22:03:32 || apply_oe.py:apply_oe() | Pre-solve H2O grid: [0.2  0.77 1.34 1.91 2.48 3.06 3.63 4.2  4.77 5.34]
+INFO:2026-10-06,22:03:32 || apply_oe.py:apply_oe() | Writing H2O pre-solve configuration file.
+INFO:2026-10-06,22:03:32 || ini.py:toTemplate() | Saved converted json to: /home/runner/.isofit/examples/image_cube/small/config/ang20170323t202244_h2o.json.tmpl
+INFO:2026-10-06,22:03:32 || apply_oe.py:apply_oe() | Run ISOFIT initial guess
+INFO:2026-10-06,22:03:32 || configs.py:create_new_config() | Loading config file: /home/runner/.isofit/examples/image_cube/small/config/ang20170323t202244_h2o.json
+INFO:2026-10-06,22:03:32 || configs.py:get_config_errors() | Checking config sections for configuration issues
+INFO:2026-10-06,22:03:32 || configs.py:get_config_errors() | Configuration file checks complete, no errors found.
+INFO:2026-10-06,22:03:35 || isofit.py:run() | Running surfaces: uniform_surface
+INFO:2026-10-06,22:03:35 || atmosphere.py:__init__() | Loading from wavelength_file: /home/runner/.isofit/examples/image_cube/small/data/wavelengths.txt
+INFO:2026-10-06,22:03:35 || reader.py:__init__() | No LUT provided, attempting to build it
+INFO:2026-10-06,22:03:35 || zarr.py:calc_shards() | Number of points: 4,250
+INFO:2026-10-06,22:03:35 || zarr.py:calc_shards() | Target chunks per file: 157903 (6.00gb) (scale: 12)
+INFO:2026-10-06,22:03:35 || zarr.py:calc_shards() | Shapes:
+INFO:2026-10-06,22:03:35 || zarr.py:calc_shards() |   dimensions: [425  10]
+INFO:2026-10-06,22:03:35 || zarr.py:calc_shards() |     chunking: [425   1]
+INFO:2026-10-06,22:03:35 || zarr.py:calc_shards() | Recommended
+INFO:2026-10-06,22:03:35 || zarr.py:calc_shards() |     sharding: [425  10]
+INFO:2026-10-06,22:03:35 || zarr.py:calc_shards() | Produces:
+INFO:2026-10-06,22:03:35 || zarr.py:calc_shards() |   Chunks per file: 10 (0.00gb)
+INFO:2026-10-06,22:03:35 || zarr.py:calc_shards() |   Number of files: 1
+INFO:2026-10-06,22:03:35 || writer.py:runSimulations() | Running any pre-sim functions
+INFO:2026-10-06,22:03:35 || sRTMnet.py:preSim() | Building simulator and executing (6S)
+INFO:2026-10-06,22:03:35 || reader.py:__init__() | No LUT provided, attempting to build it
+INFO:2026-10-06,22:03:35 || zarr.py:calc_shards() | Number of points: 8,610
+INFO:2026-10-06,22:03:35 || zarr.py:calc_shards() | Target chunks per file: 77942 (6.00gb) (scale: 12)
+INFO:2026-10-06,22:03:35 || zarr.py:calc_shards() | Shapes:
+INFO:2026-10-06,22:03:35 || zarr.py:calc_shards() |   dimensions: [861  10]
+INFO:2026-10-06,22:03:35 || zarr.py:calc_shards() |     chunking: [861   1]
+INFO:2026-10-06,22:03:35 || zarr.py:calc_shards() | Recommended
+INFO:2026-10-06,22:03:35 || zarr.py:calc_shards() |     sharding: [861   2]
+INFO:2026-10-06,22:03:35 || zarr.py:calc_shards() | Produces:
+INFO:2026-10-06,22:03:35 || zarr.py:calc_shards() |   Chunks per file: 2 (0.00gb)
+INFO:2026-10-06,22:03:35 || zarr.py:calc_shards() |   Number of files: 5
+INFO:2026-10-06,22:03:35 || writer.py:runSimulations() | Running any pre-sim functions
+INFO:2026-10-06,22:03:35 || writer.py:runSimulations() | Executing parallel simulations by shards
+INFO:2026-10-06,22:03:46 || writer.py:parallelize_shards() | Saved chunkless: {'coszen', 'solzen'}
+INFO:2026-10-06,22:03:46 || common.py:__call__() |  20.00% shards complete (elapsed: 0:00:10.338221, rate: 0:00:02.067644, eta: 0:17:03.483879)
+INFO:2026-10-06,22:03:46 || common.py:__call__() |  40.00% shards complete (elapsed: 0:00:10.350297, rate: 0:00:02.070059, eta: 0:08:27.164553)
+INFO:2026-10-06,22:03:46 || common.py:__call__() |  60.00% shards complete (elapsed: 0:00:10.391522, rate: 0:00:02.078304, eta: 0:05:35.992545)
+INFO:2026-10-06,22:03:46 || common.py:__call__() |  80.00% shards complete (elapsed: 0:00:10.469883, rate: 0:00:02.093977, eta: 0:04:11.277192)
+INFO:2026-10-06,22:03:50 || common.py:__call__() | 100.00% shards complete (elapsed: 0:00:14.246149, rate: 0:00:02.849230, eta: 0:04:30.676831)
+INFO:2026-10-06,22:03:50 || writer.py:runSimulations() | Running any post-sim functions
+INFO:2026-10-06,22:03:50 || writer.py:runSimulations() | Saving post-sim data to index zero of all dimensions except wl
+INFO:2026-10-06,22:03:50 || sRTMnet.py:process() | Interpolating simulator quantities to emulator size
+INFO:2026-10-06,22:03:50 || sRTMnet.py:process() | Loading and predicting with emulator on 4 cores
+INFO:2026-10-06,22:03:52 || common.py:__call__() | 100.00% shards processed (elapsed: 0:00:01.122989, rate: 0:00:01.122989, eta: 0:01:51.175911)
+INFO:2026-10-06,22:03:52 || writer.py:runSimulations() | Saving pre-sim data to index zero of all dimensions except wl
+INFO:2026-10-06,22:03:52 || writer.py:runSimulations() | Running any post-sim functions
+INFO:2026-10-06,22:03:53 || isofit.py:run() | Beginning 100 inversions in 40 chunks using 4 cores
+INFO:2026-10-06,22:04:00 ||| Worker 0 completed 1/~25.0:: 4.0% complete
+INFO:2026-10-06,22:04:00 ||| Worker 2 completed 1/~25.0:: 4.0% complete
+INFO:2026-10-06,22:04:00 ||| Worker 1 completed 1/~25.0:: 4.0% complete
+INFO:2026-10-06,22:04:00 ||| Worker at start location (0,9) completed 2/3
+INFO:2026-10-06,22:04:00 ||| Worker 3 completed 1/~25.0:: 4.0% complete
+INFO:2026-10-06,22:04:00 ||| Worker at start location (0,6) completed 1/2
+INFO:2026-10-06,22:04:00 ||| Worker 0 completed 4/~25.0:: 16.0% complete
+INFO:2026-10-06,22:04:01 ||| Worker at start location (0,1) completed 1/2
+INFO:2026-10-06,22:04:01 ||| Worker 1 completed 3/~25.0:: 12.0% complete
+INFO:2026-10-06,22:04:01 ||| Worker at start location (1,1) completed 1/2
+INFO:2026-10-06,22:04:01 ||| Worker at start location (0,4) completed 2/3
+INFO:2026-10-06,22:04:01 ||| Worker 0 completed 6/~25.0:: 24.0% complete
+INFO:2026-10-06,22:04:01 ||| Worker 2 completed 4/~25.0:: 16.0% complete
+INFO:2026-10-06,22:04:01 ||| Worker 3 completed 3/~25.0:: 12.0% complete
+INFO:2026-10-06,22:04:01 ||| Worker at start location (1,6) completed 1/2
+INFO:2026-10-06,22:04:01 ||| Worker at start location (1,4) completed 2/3
+INFO:2026-10-06,22:04:01 ||| Worker at start location (2,2) completed 2/3
+INFO:2026-10-06,22:04:01 ||| Worker 1 completed 6/~25.0:: 24.0% complete
+INFO:2026-10-06,22:04:01 ||| Worker at start location (1,9) completed 2/3
+INFO:2026-10-06,22:04:01 ||| Worker 3 completed 5/~25.0:: 20.0% complete
+INFO:2026-10-06,22:04:01 ||| Worker 2 completed 7/~25.0:: 28.0% complete
+INFO:2026-10-06,22:04:02 ||| Worker at start location (2,4) completed 1/2
+INFO:2026-10-06,22:04:02 ||| Worker 0 completed 9/~25.0:: 36.0% complete
+INFO:2026-10-06,22:04:02 ||| Worker at start location (2,9) completed 1/2
+INFO:2026-10-06,22:04:02 ||| Worker at start location (2,7) completed 2/3
+INFO:2026-10-06,22:04:02 ||| Worker 3 completed 7/~25.0:: 28.0% complete
+INFO:2026-10-06,22:04:02 ||| Worker 1 completed 9/~25.0:: 36.0% complete
+INFO:2026-10-06,22:04:03 ||| Worker 2 completed 9/~25.0:: 36.0% complete
+INFO:2026-10-06,22:04:03 ||| Worker at start location (3,2) completed 2/3
+INFO:2026-10-06,22:04:03 ||| Worker at start location (3,4) completed 1/2
+INFO:2026-10-06,22:04:03 ||| Worker at start location (4,0) completed 2/3
+INFO:2026-10-06,22:04:04 ||| Worker 0 completed 12/~25.0:: 48.0% complete
+INFO:2026-10-06,22:04:04 ||| Worker 1 completed 12/~25.0:: 48.0% complete
+INFO:2026-10-06,22:04:05 ||| Worker 3 completed 9/~25.0:: 36.0% complete
+INFO:2026-10-06,22:04:05 ||| Worker at start location (4,2) completed 1/2
+INFO:2026-10-06,22:04:05 ||| Worker at start location (3,7) completed 2/3
+INFO:2026-10-06,22:04:06 ||| Worker at start location (4,7) completed 1/2
+INFO:2026-10-06,22:04:06 ||| Worker 2 completed 12/~25.0:: 48.0% complete
+INFO:2026-10-06,22:04:06 ||| Worker 0 completed 14/~25.0:: 56.0% complete
+INFO:2026-10-06,22:04:06 ||| Worker at start location (4,5) completed 2/3
+INFO:2026-10-06,22:04:07 ||| Worker 1 completed 14/~25.0:: 56.0% complete
+INFO:2026-10-06,22:04:07 ||| Worker at start location (5,2) completed 1/2
+INFO:2026-10-06,22:04:07 ||| Worker 3 completed 12/~25.0:: 48.0% complete
+INFO:2026-10-06,22:04:07 ||| Worker 2 completed 14/~25.0:: 56.0% complete
+INFO:2026-10-06,22:04:07 ||| Worker at start location (5,7) completed 1/2
+INFO:2026-10-06,22:04:07 ||| Worker at start location (5,0) completed 2/3
+INFO:2026-10-06,22:04:07 ||| Worker 0 completed 17/~25.0:: 68.0% complete
+INFO:2026-10-06,22:04:07 ||| Worker 3 completed 14/~25.0:: 56.0% complete
+INFO:2026-10-06,22:04:08 ||| Worker at start location (6,5) completed 1/2
+INFO:2026-10-06,22:04:08 ||| Worker 0 completed 19/~25.0:: 76.0% complete
+INFO:2026-10-06,22:04:08 ||| Worker at start location (5,5) completed 2/3
+INFO:2026-10-06,22:04:08 ||| Worker at start location (6,0) completed 2/3
+INFO:2026-10-06,22:04:08 ||| Worker 1 completed 17/~25.0:: 68.0% complete
+INFO:2026-10-06,22:04:08 ||| Worker 2 completed 17/~25.0:: 68.0% complete
+INFO:2026-10-06,22:04:08 ||| Worker at start location (6,8) completed 2/3
+INFO:2026-10-06,22:04:08 ||| Worker at start location (7,0) completed 1/2
+INFO:2026-10-06,22:04:08 ||| Worker at start location (6,3) completed 2/3
+INFO:2026-10-06,22:04:08 ||| Worker 0 completed 22/~25.0:: 88.0% complete
+INFO:2026-10-06,22:04:08 ||| Worker 1 completed 19/~25.0:: 76.0% complete
+INFO:2026-10-06,22:04:08 ||| Worker 3 completed 17/~25.0:: 68.0% complete
+INFO:2026-10-06,22:04:08 ||| Worker at start location (7,3) completed 2/3
+INFO:2026-10-06,22:04:09 ||| Worker at start location (7,5) completed 1/2
+INFO:2026-10-06,22:04:09 ||| Worker 2 completed 20/~25.0:: 80.0% complete
+INFO:2026-10-06,22:04:09 ||| Worker at start location (7,8) completed 2/3
+INFO:2026-10-06,22:04:09 ||| Worker at start location (8,3) completed 1/2
+INFO:2026-10-06,22:04:09 ||| Worker at start location (8,1) completed 2/3
+INFO:2026-10-06,22:04:09 ||| Worker 0 completed 24/~25.0:: 96.0% complete
+INFO:2026-10-06,22:04:09 ||| Worker 1 completed 22/~25.0:: 88.0% complete
+INFO:2026-10-06,22:04:09 ||| Worker 3 completed 20/~25.0:: 80.0% complete
+INFO:2026-10-06,22:04:09 ||| Worker 2 completed 22/~25.0:: 88.0% complete
+INFO:2026-10-06,22:04:09 ||| Worker at start location (9,3) completed 1/2
+INFO:2026-10-06,22:04:09 ||| Worker at start location (8,6) completed 2/3
+INFO:2026-10-06,22:04:09 ||| Worker at start location (8,8) completed 1/2
+INFO:2026-10-06,22:04:09 ||| Worker at start location (9,1) completed 2/3
+INFO:2026-10-06,22:04:09 ||| Worker 3 completed 22/~25.0:: 88.0% complete
+INFO:2026-10-06,22:04:09 ||| Worker 0 completed 27/~25.0:: 108.0% complete
+INFO:2026-10-06,22:04:10 ||| Worker at start location (9,6) completed 2/3
+INFO:2026-10-06,22:04:10 ||| Worker at start location (9,9) completed 2/3
+INFO:2026-10-06,22:04:10 || isofit.py:run() | Pixel class: uniform_surface inversions complete.
+INFO:2026-10-06,22:04:10 || isofit.py:run() | Running totals
+INFO:2026-10-06,22:04:10 || isofit.py:run() | 16.5s total
+INFO:2026-10-06,22:04:10 || isofit.py:run() | 6.0593 spectra/s
+INFO:2026-10-06,22:04:10 || isofit.py:run() | 1.5148 spectra/s/core
+INFO:2026-10-06,22:04:10 || isofit.py:run() | All Inversions complete.
+INFO:2026-10-06,22:04:10 || isofit.py:run() | Final totals
+INFO:2026-10-06,22:04:10 || isofit.py:run() | 16.5s total
+INFO:2026-10-06,22:04:10 || isofit.py:run() | 6.0593 spectra/s
+INFO:2026-10-06,22:04:10 || isofit.py:run() | 1.5148 spectra/s/core
+INFO:2026-10-06,22:04:10 || apply_oe.py:apply_oe() | Full (non-aerosol) LUTs:
+INFO:2026-10-06,22:04:10 || apply_oe.py:apply_oe() | Elevation: [0.     0.226  0.4519 0.6779 0.9039 1.1298 1.3558 1.5817 1.8077 2.0337]
+INFO:2026-10-06,22:04:10 || apply_oe.py:apply_oe() | To-sensor zenith: None
+INFO:2026-10-06,22:04:10 || apply_oe.py:apply_oe() | To-sun zenith: None
+INFO:2026-10-06,22:04:10 || apply_oe.py:apply_oe() | Relative to-sun azimuth: None
+INFO:2026-10-06,22:04:10 || apply_oe.py:apply_oe() | H2O Vapor: [0.8083 1.0046 1.2008 1.397  1.5933]
+INFO:2026-10-06,22:04:10 || apply_oe.py:apply_oe() | Writing main configuration file.
+INFO:2026-10-06,22:04:10 || template_construction.py:load_climatology() | Loading Climatology
+INFO:2026-10-06,22:04:10 || template_construction.py:load_climatology() | Climatology Loaded.  Aerosol State Vector:
 {'AOT550': {'bounds': [0.04209, 1.0], 'scale': 1, 'init': 0.137881, 'prior_sigma': 0.1, 'prior_mean': 0.137881}}
 Aerosol LUT Grid:
 {'AOT550': [0.04209, 0.137881, 0.233672, 0.329463, 0.425254, 0.521045, 0.6168359999999999, 0.712627, 0.808418, 0.9042089999999999, 1.0]}
 Aerosol model path:/home/runner/.isofit/data/aerosol_model.txt
-INFO:2026-10-06,15:56:58 || ini.py:toTemplate() | Saved converted json to: /home/runner/.isofit/examples/image_cube/small/config/ang20170323t202244_isofit.json.tmpl
-INFO:2026-10-06,15:56:58 || apply_oe.py:apply_oe() | Running ISOFIT with full LUT
-INFO:2026-10-06,15:56:58 || configs.py:create_new_config() | Loading config file: /home/runner/.isofit/examples/image_cube/small/config/ang20170323t202244_isofit.json
-INFO:2026-10-06,15:56:58 || configs.py:get_config_errors() | Checking config sections for configuration issues
-INFO:2026-10-06,15:56:58 || configs.py:get_config_errors() | Configuration file checks complete, no errors found.
-INFO:2026-10-06,15:56:58 || isofit.py:run() | Running surfaces: uniform_surface
-INFO:2026-10-06,15:56:58 || atmosphere.py:__init__() | Loading from wavelength_file: /home/runner/.isofit/examples/image_cube/small/data/wavelengths.txt
-INFO:2026-10-06,15:56:58 || reader.py:__init__() | No LUT provided, attempting to build it
-INFO:2026-10-06,15:56:58 || zarr.py:calc_shards() | Number of points: 233,750
-INFO:2026-10-06,15:56:58 || zarr.py:calc_shards() | Target chunks per file: 157903 (6.00gb) (scale: 12)
-INFO:2026-10-06,15:56:58 || zarr.py:calc_shards() | Shapes:
-INFO:2026-10-06,15:56:58 || zarr.py:calc_shards() |   dimensions: [425  11   5  10]
-INFO:2026-10-06,15:56:58 || zarr.py:calc_shards() |     chunking: [425   1   1   1]
-INFO:2026-10-06,15:56:58 || zarr.py:calc_shards() | Recommended
-INFO:2026-10-06,15:56:58 || zarr.py:calc_shards() |     sharding: [425  11   5  10]
-INFO:2026-10-06,15:56:58 || zarr.py:calc_shards() | Produces:
-INFO:2026-10-06,15:56:58 || zarr.py:calc_shards() |   Chunks per file: 550 (0.02gb)
-INFO:2026-10-06,15:56:58 || zarr.py:calc_shards() |   Number of files: 1
-INFO:2026-10-06,15:56:58 || writer.py:runSimulations() | Running any pre-sim functions
-INFO:2026-10-06,15:56:58 || sRTMnet.py:preSim() | Building simulator and executing (6S)
-INFO:2026-10-06,15:56:58 || reader.py:__init__() | No LUT provided, attempting to build it
-INFO:2026-10-06,15:56:58 || zarr.py:calc_shards() | Number of points: 473,550
-INFO:2026-10-06,15:56:58 || zarr.py:calc_shards() | Target chunks per file: 77942 (6.00gb) (scale: 12)
-INFO:2026-10-06,15:56:58 || zarr.py:calc_shards() | Shapes:
-INFO:2026-10-06,15:56:58 || zarr.py:calc_shards() |   dimensions: [861  11   5  10]
-INFO:2026-10-06,15:56:58 || zarr.py:calc_shards() |     chunking: [861   1   1   1]
-INFO:2026-10-06,15:56:58 || zarr.py:calc_shards() | Recommended
-INFO:2026-10-06,15:56:58 || zarr.py:calc_shards() |     sharding: [861  11   1  10]
-INFO:2026-10-06,15:56:58 || zarr.py:calc_shards() | Produces:
-INFO:2026-10-06,15:56:58 || zarr.py:calc_shards() |   Chunks per file: 110 (0.01gb)
-INFO:2026-10-06,15:56:58 || zarr.py:calc_shards() |   Number of files: 5
-INFO:2026-10-06,15:56:58 || writer.py:runSimulations() | Running any pre-sim functions
-INFO:2026-10-06,15:56:58 || writer.py:runSimulations() | Executing parallel simulations by shards
-INFO:2026-10-06,16:05:23 || writer.py:parallelize_shards() | Saved chunkless: {'solzen', 'coszen'}
-INFO:2026-10-06,16:05:23 || common.py:__call__() |  20.00% shards complete (elapsed: 0:08:24.764341, rate: 0:01:40.952868, eta: 13:52:51.669759)
-INFO:2026-10-06,16:05:26 || common.py:__call__() |  40.00% shards complete (elapsed: 0:08:28.061263, rate: 0:01:41.612253, eta: 6:54:55.001887)
-INFO:2026-10-06,16:05:26 || common.py:__call__() |  60.00% shards complete (elapsed: 0:08:28.237098, rate: 0:01:41.647420, eta: 4:33:52.999502)
-INFO:2026-10-06,16:05:27 || common.py:__call__() |  80.00% shards complete (elapsed: 0:08:29.179855, rate: 0:01:41.835971, eta: 3:23:40.316520)
-INFO:2026-10-06,16:10:03 || common.py:__call__() | 100.00% shards complete (elapsed: 0:13:04.679109, rate: 0:02:36.935822, eta: 4:08:28.903071)
-INFO:2026-10-06,16:10:03 || writer.py:runSimulations() | Running any post-sim functions
-INFO:2026-10-06,16:10:04 || writer.py:runSimulations() | Saving post-sim data to index zero of all dimensions except wl
-INFO:2026-10-06,16:10:04 || sRTMnet.py:process() | Interpolating simulator quantities to emulator size
-INFO:2026-10-06,16:10:04 || sRTMnet.py:process() | Loading and predicting with emulator on 4 cores
-INFO:2026-10-06,16:10:10 || common.py:__call__() | 100.00% shards processed (elapsed: 0:00:06.015349, rate: 0:00:06.015349, eta: 0:09:55.519551)
-INFO:2026-10-06,16:10:10 || writer.py:runSimulations() | Saving pre-sim data to index zero of all dimensions except wl
-INFO:2026-10-06,16:10:11 || writer.py:runSimulations() | Running any post-sim functions
-INFO:2026-10-06,16:10:12 || isofit.py:run() | Beginning 100 inversions in 40 chunks using 4 cores
-INFO:2026-10-06,16:10:20 ||| Worker 3 completed 1/~25.0:: 4.0% complete
-INFO:2026-10-06,16:10:20 ||| Worker 2 completed 1/~25.0:: 4.0% complete
-INFO:2026-10-06,16:10:20 ||| Worker 1 completed 1/~25.0:: 4.0% complete
-INFO:2026-10-06,16:10:20 ||| Worker 0 completed 1/~25.0:: 4.0% complete
-INFO:2026-10-06,16:10:20 ||| Worker at start location (0,1) completed 1/2
-INFO:2026-10-06,16:10:21 ||| Worker at start location (0,6) completed 1/2
-INFO:2026-10-06,16:10:21 ||| Worker 3 completed 3/~25.0:: 12.0% complete
-INFO:2026-10-06,16:10:21 ||| Worker 1 completed 3/~25.0:: 12.0% complete
-INFO:2026-10-06,16:10:21 ||| Worker at start location (0,4) completed 2/3
-INFO:2026-10-06,16:10:21 ||| Worker at start location (0,9) completed 2/3
-INFO:2026-10-06,16:10:21 ||| Worker at start location (1,1) completed 1/2
-INFO:2026-10-06,16:10:22 ||| Worker 2 completed 4/~25.0:: 16.0% complete
-INFO:2026-10-06,16:10:22 ||| Worker 0 completed 4/~25.0:: 16.0% complete
-INFO:2026-10-06,16:10:22 ||| Worker at start location (1,4) completed 2/3
-INFO:2026-10-06,16:10:22 ||| Worker 3 completed 5/~25.0:: 20.0% complete
-INFO:2026-10-06,16:10:22 ||| Worker at start location (1,6) completed 1/2
-INFO:2026-10-06,16:10:22 ||| Worker 1 completed 6/~25.0:: 24.0% complete
-INFO:2026-10-06,16:10:23 ||| Worker 2 completed 6/~25.0:: 24.0% complete
-INFO:2026-10-06,16:10:23 ||| Worker at start location (1,9) completed 2/3
-INFO:2026-10-06,16:10:23 ||| Worker at start location (2,4) completed 1/2
-INFO:2026-10-06,16:10:23 ||| Worker at start location (2,2) completed 2/3
-INFO:2026-10-06,16:10:23 ||| Worker 0 completed 7/~25.0:: 28.0% complete
-INFO:2026-10-06,16:10:24 ||| Worker 1 completed 8/~25.0:: 32.0% complete
-INFO:2026-10-06,16:10:24 ||| Worker at start location (2,7) completed 2/3
-INFO:2026-10-06,16:10:24 ||| Worker 3 completed 8/~25.0:: 32.0% complete
-INFO:2026-10-06,16:10:24 ||| Worker at start location (2,9) completed 1/2
-INFO:2026-10-06,16:10:25 ||| Worker at start location (3,2) completed 2/3
-INFO:2026-10-06,16:10:25 ||| Worker at start location (3,4) completed 1/2
-INFO:2026-10-06,16:10:25 ||| Worker 2 completed 9/~25.0:: 36.0% complete
-INFO:2026-10-06,16:10:26 ||| Worker 0 completed 9/~25.0:: 36.0% complete
-INFO:2026-10-06,16:10:26 ||| Worker 1 completed 11/~25.0:: 44.0% complete
-INFO:2026-10-06,16:10:26 ||| Worker 3 completed 10/~25.0:: 40.0% complete
-INFO:2026-10-06,16:10:28 ||| Worker at start location (3,7) completed 2/3
-INFO:2026-10-06,16:10:28 ||| Worker at start location (4,2) completed 1/2
-INFO:2026-10-06,16:10:29 ||| Worker at start location (4,0) completed 2/3
-INFO:2026-10-06,16:10:29 ||| Worker 1 completed 13/~25.0:: 52.0% complete
-INFO:2026-10-06,16:10:29 ||| Worker 2 completed 12/~25.0:: 48.0% complete
-INFO:2026-10-06,16:10:30 ||| Worker at start location (4,5) completed 2/3
-INFO:2026-10-06,16:10:30 ||| Worker 0 completed 12/~25.0:: 48.0% complete
-INFO:2026-10-06,16:10:31 ||| Worker 3 completed 13/~25.0:: 52.0% complete
-INFO:2026-10-06,16:10:31 ||| Worker at start location (4,7) completed 1/2
-INFO:2026-10-06,16:10:31 ||| Worker 2 completed 14/~25.0:: 56.0% complete
-INFO:2026-10-06,16:10:32 ||| Worker at start location (5,2) completed 1/2
-INFO:2026-10-06,16:10:32 ||| Worker at start location (5,0) completed 2/3
-INFO:2026-10-06,16:10:32 ||| Worker at start location (5,5) completed 2/3
-INFO:2026-10-06,16:10:32 ||| Worker at start location (5,7) completed 1/2
-INFO:2026-10-06,16:10:32 ||| Worker 1 completed 16/~25.0:: 64.0% complete
-INFO:2026-10-06,16:10:32 ||| Worker 0 completed 14/~25.0:: 56.0% complete
-INFO:2026-10-06,16:10:32 ||| Worker 3 completed 16/~25.0:: 64.0% complete
-INFO:2026-10-06,16:10:33 ||| Worker 2 completed 16/~25.0:: 64.0% complete
-INFO:2026-10-06,16:10:33 ||| Worker at start location (6,5) completed 1/2
-INFO:2026-10-06,16:10:33 ||| Worker at start location (6,3) completed 2/3
-INFO:2026-10-06,16:10:33 ||| Worker 3 completed 18/~25.0:: 72.0% complete
-INFO:2026-10-06,16:10:34 ||| Worker at start location (6,8) completed 2/3
-INFO:2026-10-06,16:10:34 ||| Worker 1 completed 19/~25.0:: 76.0% complete
-INFO:2026-10-06,16:10:34 ||| Worker at start location (6,0) completed 2/3
-INFO:2026-10-06,16:10:34 ||| Worker at start location (7,0) completed 1/2
-INFO:2026-10-06,16:10:34 ||| Worker 2 completed 19/~25.0:: 76.0% complete
-INFO:2026-10-06,16:10:34 ||| Worker 0 completed 17/~25.0:: 68.0% complete
-INFO:2026-10-06,16:10:34 ||| Worker at start location (7,5) completed 1/2
-INFO:2026-10-06,16:10:34 ||| Worker 3 completed 20/~25.0:: 80.0% complete
-INFO:2026-10-06,16:10:35 ||| Worker at start location (7,3) completed 2/3
-INFO:2026-10-06,16:10:35 ||| Worker 2 completed 21/~25.0:: 84.0% complete
-INFO:2026-10-06,16:10:35 ||| Worker 1 completed 22/~25.0:: 88.0% complete
-INFO:2026-10-06,16:10:35 ||| Worker at start location (7,8) completed 2/3
-INFO:2026-10-06,16:10:35 ||| Worker at start location (8,1) completed 2/3
-INFO:2026-10-06,16:10:35 ||| Worker at start location (8,3) completed 1/2
-INFO:2026-10-06,16:10:36 ||| Worker 0 completed 20/~25.0:: 80.0% complete
-INFO:2026-10-06,16:10:36 ||| Worker 2 completed 23/~25.0:: 92.0% complete
-INFO:2026-10-06,16:10:36 ||| Worker 3 completed 23/~25.0:: 92.0% complete
-INFO:2026-10-06,16:10:36 ||| Worker at start location (8,6) completed 2/3
-INFO:2026-10-06,16:10:37 ||| Worker at start location (9,3) completed 1/2
-INFO:2026-10-06,16:10:37 ||| Worker at start location (8,8) completed 1/2
-INFO:2026-10-06,16:10:37 ||| Worker 1 completed 25/~25.0:: 100.0% complete
-INFO:2026-10-06,16:10:37 ||| Worker at start location (9,1) completed 2/3
-INFO:2026-10-06,16:10:37 ||| Worker 2 completed 25/~25.0:: 100.0% complete
-INFO:2026-10-06,16:10:37 ||| Worker at start location (9,6) completed 2/3
-INFO:2026-10-06,16:10:38 ||| Worker at start location (9,9) completed 2/3
-INFO:2026-10-06,16:10:38 || isofit.py:run() | Pixel class: uniform_surface inversions complete.
-INFO:2026-10-06,16:10:38 || isofit.py:run() | Running totals
-INFO:2026-10-06,16:10:38 || isofit.py:run() | 26.37s total
-INFO:2026-10-06,16:10:38 || isofit.py:run() | 3.7928 spectra/s
-INFO:2026-10-06,16:10:38 || isofit.py:run() | 0.9482 spectra/s/core
-INFO:2026-10-06,16:10:38 || isofit.py:run() | All Inversions complete.
-INFO:2026-10-06,16:10:38 || isofit.py:run() | Final totals
-INFO:2026-10-06,16:10:38 || isofit.py:run() | 26.37s total
-INFO:2026-10-06,16:10:38 || isofit.py:run() | 3.7928 spectra/s
-INFO:2026-10-06,16:10:38 || isofit.py:run() | 0.9482 spectra/s/core
-INFO:2026-10-06,16:10:38 || apply_oe.py:apply_oe() | Done.
+INFO:2026-10-06,22:04:10 || ini.py:toTemplate() | Saved converted json to: /home/runner/.isofit/examples/image_cube/small/config/ang20170323t202244_isofit.json.tmpl
+INFO:2026-10-06,22:04:10 || apply_oe.py:apply_oe() | Running ISOFIT with full LUT
+WARNING:2026-10-06,22:04:10 || __init__.py:checkNumThreads() | 
+******************************************************************************************
+! Number of threads is greater than 1 (currently: 4), this may greatly impact performance
+! Please set this the environment variables 'MKL_NUM_THREADS' and 'OMP_NUM_THREADS' to '1'
+******************************************************************************************
+INFO:2026-10-06,22:04:10 || configs.py:create_new_config() | Loading config file: /home/runner/.isofit/examples/image_cube/small/config/ang20170323t202244_isofit.json
+INFO:2026-10-06,22:04:10 || configs.py:get_config_errors() | Checking config sections for configuration issues
+INFO:2026-10-06,22:04:10 || configs.py:get_config_errors() | Configuration file checks complete, no errors found.
+INFO:2026-10-06,22:04:10 || isofit.py:run() | Running surfaces: uniform_surface
+INFO:2026-10-06,22:04:10 || atmosphere.py:__init__() | Loading from wavelength_file: /home/runner/.isofit/examples/image_cube/small/data/wavelengths.txt
+INFO:2026-10-06,22:04:10 || reader.py:__init__() | No LUT provided, attempting to build it
+INFO:2026-10-06,22:04:10 || zarr.py:calc_shards() | Number of points: 233,750
+INFO:2026-10-06,22:04:10 || zarr.py:calc_shards() | Target chunks per file: 157903 (6.00gb) (scale: 12)
+INFO:2026-10-06,22:04:10 || zarr.py:calc_shards() | Shapes:
+INFO:2026-10-06,22:04:10 || zarr.py:calc_shards() |   dimensions: [425  11   5  10]
+INFO:2026-10-06,22:04:10 || zarr.py:calc_shards() |     chunking: [425   1   1   1]
+INFO:2026-10-06,22:04:10 || zarr.py:calc_shards() | Recommended
+INFO:2026-10-06,22:04:10 || zarr.py:calc_shards() |     sharding: [425  11   5  10]
+INFO:2026-10-06,22:04:10 || zarr.py:calc_shards() | Produces:
+INFO:2026-10-06,22:04:10 || zarr.py:calc_shards() |   Chunks per file: 550 (0.02gb)
+INFO:2026-10-06,22:04:10 || zarr.py:calc_shards() |   Number of files: 1
+INFO:2026-10-06,22:04:10 || writer.py:runSimulations() | Running any pre-sim functions
+INFO:2026-10-06,22:04:10 || sRTMnet.py:preSim() | Building simulator and executing (6S)
+INFO:2026-10-06,22:04:10 || reader.py:__init__() | No LUT provided, attempting to build it
+INFO:2026-10-06,22:04:10 || zarr.py:calc_shards() | Number of points: 473,550
+INFO:2026-10-06,22:04:10 || zarr.py:calc_shards() | Target chunks per file: 77942 (6.00gb) (scale: 12)
+INFO:2026-10-06,22:04:10 || zarr.py:calc_shards() | Shapes:
+INFO:2026-10-06,22:04:10 || zarr.py:calc_shards() |   dimensions: [861  11   5  10]
+INFO:2026-10-06,22:04:10 || zarr.py:calc_shards() |     chunking: [861   1   1   1]
+INFO:2026-10-06,22:04:10 || zarr.py:calc_shards() | Recommended
+INFO:2026-10-06,22:04:10 || zarr.py:calc_shards() |     sharding: [861  11   1  10]
+INFO:2026-10-06,22:04:10 || zarr.py:calc_shards() | Produces:
+INFO:2026-10-06,22:04:10 || zarr.py:calc_shards() |   Chunks per file: 110 (0.01gb)
+INFO:2026-10-06,22:04:10 || zarr.py:calc_shards() |   Number of files: 5
+INFO:2026-10-06,22:04:10 || writer.py:runSimulations() | Running any pre-sim functions
+INFO:2026-10-06,22:04:10 || writer.py:runSimulations() | Executing parallel simulations by shards
+INFO:2026-10-06,22:11:27 || writer.py:parallelize_shards() | Saved chunkless: {'coszen', 'solzen'}
+INFO:2026-10-06,22:11:27 || common.py:__call__() |  20.00% shards complete (elapsed: 0:07:16.808291, rate: 0:01:27.361658, eta: 12:00:44.020809)
+INFO:2026-10-06,22:11:27 || common.py:__call__() |  40.00% shards complete (elapsed: 0:07:17.135215, rate: 0:01:27.427043, eta: 5:56:59.625535)
+INFO:2026-10-06,22:11:28 || common.py:__call__() |  60.00% shards complete (elapsed: 0:07:17.206802, rate: 0:01:27.441360, eta: 3:55:36.353265)
+INFO:2026-10-06,22:11:28 || common.py:__call__() |  80.00% shards complete (elapsed: 0:07:17.397146, rate: 0:01:27.479429, eta: 2:54:57.531504)
+INFO:2026-10-06,22:15:24 || common.py:__call__() | 100.00% shards complete (elapsed: 0:11:13.554167, rate: 0:02:14.710833, eta: 3:33:17.529173)
+INFO:2026-10-06,22:15:24 || writer.py:runSimulations() | Running any post-sim functions
+INFO:2026-10-06,22:15:24 || writer.py:runSimulations() | Saving post-sim data to index zero of all dimensions except wl
+INFO:2026-10-06,22:15:25 || sRTMnet.py:process() | Interpolating simulator quantities to emulator size
+INFO:2026-10-06,22:15:25 || sRTMnet.py:process() | Loading and predicting with emulator on 4 cores
+INFO:2026-10-06,22:15:30 || common.py:__call__() | 100.00% shards processed (elapsed: 0:00:04.919303, rate: 0:00:04.919303, eta: 0:08:07.010997)
+INFO:2026-10-06,22:15:30 || writer.py:runSimulations() | Saving pre-sim data to index zero of all dimensions except wl
+INFO:2026-10-06,22:15:30 || writer.py:runSimulations() | Running any post-sim functions
+INFO:2026-10-06,22:15:31 || isofit.py:run() | Beginning 100 inversions in 40 chunks using 4 cores
+INFO:2026-10-06,22:15:37 ||| Worker 1 completed 1/~25.0:: 4.0% complete
+INFO:2026-10-06,22:15:37 ||| Worker 3 completed 1/~25.0:: 4.0% complete
+INFO:2026-10-06,22:15:38 ||| Worker at start location (0,6) completed 1/2
+INFO:2026-10-06,22:15:38 ||| Worker 2 completed 1/~25.0:: 4.0% complete
+INFO:2026-10-06,22:15:38 ||| Worker 0 completed 1/~25.0:: 4.0% complete
+INFO:2026-10-06,22:15:38 ||| Worker at start location (0,1) completed 1/2
+INFO:2026-10-06,22:15:38 ||| Worker 1 completed 3/~25.0:: 12.0% complete
+INFO:2026-10-06,22:15:38 ||| Worker 3 completed 3/~25.0:: 12.0% complete
+INFO:2026-10-06,22:15:38 ||| Worker at start location (1,1) completed 1/2
+INFO:2026-10-06,22:15:38 ||| Worker at start location (0,4) completed 2/3
+INFO:2026-10-06,22:15:39 ||| Worker 1 completed 5/~25.0:: 20.0% complete
+INFO:2026-10-06,22:15:39 ||| Worker at start location (0,9) completed 2/3
+INFO:2026-10-06,22:15:39 ||| Worker 2 completed 4/~25.0:: 16.0% complete
+INFO:2026-10-06,22:15:39 ||| Worker at start location (1,4) completed 2/3
+INFO:2026-10-06,22:15:39 ||| Worker at start location (1,6) completed 1/2
+INFO:2026-10-06,22:15:39 ||| Worker 0 completed 4/~25.0:: 16.0% complete
+INFO:2026-10-06,22:15:39 ||| Worker 3 completed 6/~25.0:: 24.0% complete
+INFO:2026-10-06,22:15:40 ||| Worker 1 completed 7/~25.0:: 28.0% complete
+INFO:2026-10-06,22:15:40 ||| Worker at start location (1,9) completed 2/3
+INFO:2026-10-06,22:15:40 ||| Worker at start location (2,4) completed 1/2
+INFO:2026-10-06,22:15:40 ||| Worker at start location (2,2) completed 2/3
+INFO:2026-10-06,22:15:40 ||| Worker 2 completed 7/~25.0:: 28.0% complete
+INFO:2026-10-06,22:15:40 ||| Worker 3 completed 8/~25.0:: 32.0% complete
+INFO:2026-10-06,22:15:40 ||| Worker at start location (2,7) completed 2/3
+INFO:2026-10-06,22:15:40 ||| Worker 0 completed 7/~25.0:: 28.0% complete
+INFO:2026-10-06,22:15:41 ||| Worker at start location (2,9) completed 1/2
+INFO:2026-10-06,22:15:41 ||| Worker at start location (3,2) completed 2/3
+INFO:2026-10-06,22:15:41 ||| Worker at start location (3,4) completed 1/2
+INFO:2026-10-06,22:15:41 ||| Worker 1 completed 10/~25.0:: 40.0% complete
+INFO:2026-10-06,22:15:42 ||| Worker 2 completed 9/~25.0:: 36.0% complete
+INFO:2026-10-06,22:15:42 ||| Worker 3 completed 11/~25.0:: 44.0% complete
+INFO:2026-10-06,22:15:42 ||| Worker 0 completed 9/~25.0:: 36.0% complete
+INFO:2026-10-06,22:15:43 ||| Worker at start location (3,7) completed 2/3
+INFO:2026-10-06,22:15:43 ||| Worker at start location (4,2) completed 1/2
+INFO:2026-10-06,22:15:44 ||| Worker 3 completed 13/~25.0:: 52.0% complete
+INFO:2026-10-06,22:15:44 ||| Worker at start location (4,0) completed 2/3
+INFO:2026-10-06,22:15:45 ||| Worker 1 completed 13/~25.0:: 52.0% complete
+INFO:2026-10-06,22:15:45 ||| Worker at start location (4,5) completed 2/3
+INFO:2026-10-06,22:15:45 ||| Worker 2 completed 12/~25.0:: 48.0% complete
+INFO:2026-10-06,22:15:46 ||| Worker 0 completed 12/~25.0:: 48.0% complete
+INFO:2026-10-06,22:15:46 ||| Worker at start location (4,7) completed 1/2
+INFO:2026-10-06,22:15:46 ||| Worker at start location (5,0) completed 2/3
+INFO:2026-10-06,22:15:46 ||| Worker 1 completed 15/~25.0:: 60.0% complete
+INFO:2026-10-06,22:15:47 ||| Worker at start location (5,2) completed 1/2
+INFO:2026-10-06,22:15:47 ||| Worker at start location (5,5) completed 2/3
+INFO:2026-10-06,22:15:47 ||| Worker 3 completed 16/~25.0:: 64.0% complete
+INFO:2026-10-06,22:15:47 ||| Worker at start location (5,7) completed 1/2
+INFO:2026-10-06,22:15:47 ||| Worker 2 completed 14/~25.0:: 56.0% complete
+INFO:2026-10-06,22:15:47 ||| Worker 0 completed 15/~25.0:: 60.0% complete
+INFO:2026-10-06,22:15:47 ||| Worker 1 completed 17/~25.0:: 68.0% complete
+INFO:2026-10-06,22:15:47 ||| Worker at start location (6,5) completed 1/2
+INFO:2026-10-06,22:15:48 ||| Worker at start location (6,3) completed 2/3
+INFO:2026-10-06,22:15:48 ||| Worker 0 completed 17/~25.0:: 68.0% complete
+INFO:2026-10-06,22:15:48 ||| Worker at start location (6,8) completed 2/3
+INFO:2026-10-06,22:15:48 ||| Worker at start location (6,0) completed 2/3
+INFO:2026-10-06,22:15:48 ||| Worker 2 completed 17/~25.0:: 68.0% complete
+INFO:2026-10-06,22:15:48 ||| Worker at start location (7,0) completed 1/2
+INFO:2026-10-06,22:15:48 ||| Worker 1 completed 20/~25.0:: 80.0% complete
+INFO:2026-10-06,22:15:48 ||| Worker 3 completed 19/~25.0:: 76.0% complete
+INFO:2026-10-06,22:15:49 ||| Worker at start location (7,5) completed 1/2
+INFO:2026-10-06,22:15:49 ||| Worker 0 completed 19/~25.0:: 76.0% complete
+INFO:2026-10-06,22:15:49 ||| Worker 1 completed 22/~25.0:: 88.0% complete
+INFO:2026-10-06,22:15:49 ||| Worker at start location (7,3) completed 2/3
+INFO:2026-10-06,22:15:49 ||| Worker at start location (7,8) completed 2/3
+INFO:2026-10-06,22:15:49 ||| Worker at start location (8,3) completed 1/2
+INFO:2026-10-06,22:15:49 ||| Worker at start location (8,1) completed 2/3
+INFO:2026-10-06,22:15:49 ||| Worker 2 completed 20/~25.0:: 80.0% complete
+INFO:2026-10-06,22:15:50 ||| Worker 3 completed 22/~25.0:: 88.0% complete
+INFO:2026-10-06,22:15:50 ||| Worker 1 completed 24/~25.0:: 96.0% complete
+INFO:2026-10-06,22:15:50 ||| Worker 0 completed 22/~25.0:: 88.0% complete
+INFO:2026-10-06,22:15:50 ||| Worker at start location (8,8) completed 1/2
+INFO:2026-10-06,22:15:50 ||| Worker at start location (8,6) completed 2/3
+INFO:2026-10-06,22:15:50 ||| Worker at start location (9,3) completed 1/2
+INFO:2026-10-06,22:15:50 ||| Worker 3 completed 24/~25.0:: 96.0% complete
+INFO:2026-10-06,22:15:50 ||| Worker at start location (9,1) completed 2/3
+INFO:2026-10-06,22:15:51 ||| Worker 2 completed 23/~25.0:: 92.0% complete
+INFO:2026-10-06,22:15:51 ||| Worker at start location (9,6) completed 2/3
+INFO:2026-10-06,22:15:51 ||| Worker at start location (9,9) completed 2/3
+INFO:2026-10-06,22:15:51 || isofit.py:run() | Pixel class: uniform_surface inversions complete.
+INFO:2026-10-06,22:15:51 || isofit.py:run() | Running totals
+INFO:2026-10-06,22:15:51 || isofit.py:run() | 20.29s total
+INFO:2026-10-06,22:15:51 || isofit.py:run() | 4.9295 spectra/s
+INFO:2026-10-06,22:15:51 || isofit.py:run() | 1.2324 spectra/s/core
+INFO:2026-10-06,22:15:51 || isofit.py:run() | All Inversions complete.
+INFO:2026-10-06,22:15:51 || isofit.py:run() | Final totals
+INFO:2026-10-06,22:15:51 || isofit.py:run() | 20.29s total
+INFO:2026-10-06,22:15:51 || isofit.py:run() | 4.9295 spectra/s
+INFO:2026-10-06,22:15:51 || isofit.py:run() | 1.2324 spectra/s/core
+INFO:2026-10-06,22:15:51 || apply_oe.py:apply_oe() | Done.
